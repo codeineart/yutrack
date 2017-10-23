@@ -1,0 +1,11 @@
+.title {
+    margin:0px;
+    padding:0px;
+}
+.submitButton {
+    width: 100%;
+}
+
+input {
+    width: 90%;
+}

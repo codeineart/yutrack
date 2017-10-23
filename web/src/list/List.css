@@ -1,0 +1,14 @@
+.entries {
+    padding:5px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.delEntry {
+    flex-grow: 1;
+}
+
+.dataEntry {   
+    flex-grow: 24;
+}

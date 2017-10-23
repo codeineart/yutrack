@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  margin:0px;
+  background-color: limegreen;
+  padding: 20px;
+  color: white;
+  text-align: left;
+}
+
+.ExpensesList {
+  text-align: left;
+  background-color: #EEEEEE;
+  padding:20px;
+}
+
+.SubmitForm {
+  text-align: center;
+  padding:20px;
+  max-width: 300px;
+  margin: auto;
+}

@@ -1,0 +1,15 @@
+{
+    // How the typscript compiler will behave
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs"
+    },
+    // What to include on compilation
+    "include": [
+      "**/*.ts"
+    ],
+    // And, of course, what to exclude
+    "exclude": [
+      "node_modules"
+    ]
+  }
