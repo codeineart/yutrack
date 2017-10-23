@@ -6,7 +6,7 @@ import * as expensesController from './controllers/expenses'
 // Class to reference application
 class App {
 
-  // typedef ref for express module inside app class
+  // typedef ref for express module inside the class
   public express: express.Application;
   public db: mongoose.Connection;
   public mongoose: any;
@@ -40,17 +40,21 @@ class App {
   // Configure API endpoints.
   private routes(): void {
 
+    // Creates an instance of router
     let router = express.Router();
 
+    // Routes functions defined in controller
     router.get('/', expensesController.test);
     router.post('/endpoint/create', expensesController.postCreate);
     router.get('/endpoint/read', expensesController.getRead);
     router.post('/endpoint/update', expensesController.postUpdate);
     router.get('/endpoint/delete', expensesController.getDelete);
     
+    // Lnk router with the app
     this.express.use(router);
 
   }
 }
 
+// On export, ref to express of App instance
 export default new App().express;
